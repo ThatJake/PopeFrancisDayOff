@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//INCOMPLETE
 public class PlayerStats : MonoBehaviour
 {
     private int xp = 0;
@@ -14,13 +15,13 @@ public class PlayerStats : MonoBehaviour
         pM = GetComponent<PlayerMovement>();
     }
 
-    public void AddXP(int amount)
+    public void AddXP(int amount) //adding xp and checking if level up has been reached
     {
         xp += amount;
         CheckLevelUp();
     }
 
-    private void CheckLevelUp()
+    private void CheckLevelUp() //actually checking for level up
     {
         int xpToLevelUp = level;
 
@@ -30,7 +31,7 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    private void LevelUp()
+    private void LevelUp() //levelling up
     {
         level++;
 

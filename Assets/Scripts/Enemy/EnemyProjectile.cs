@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyProjectile : BaseProjectile
 {
+
+    //If Projectile hits Player -> Player gets 1 damage
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

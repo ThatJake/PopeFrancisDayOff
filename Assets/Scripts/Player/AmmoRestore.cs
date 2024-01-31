@@ -6,7 +6,7 @@ public class AmmoRestore : MonoBehaviour
 {
     [SerializeField] private float ammoValue;
 
-
+    //If player collides with the ammo potion he regains a set amount of ammo
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EndMenu : MonoBehaviour
 {
-    public void Quit()
+    public void Quit() //Quit the game
     {
         Application.Quit();
     }

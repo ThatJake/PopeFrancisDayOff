@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RangedEnemy : MonoBehaviour
+
+    //Setup for enemies shooting projectiles
 {
     [Header("Attack Parameters")]
     [SerializeField] private float range;
@@ -13,7 +15,7 @@ public class RangedEnemy : MonoBehaviour
     [SerializeField] public GameObject[] ectoplasm;
 
 
-
+    //access to projectiles
     public int FindEctoplasm()
     {
         for (int i = 0; i < ectoplasm.Length; i++)
@@ -22,7 +24,12 @@ public class RangedEnemy : MonoBehaviour
                 return i;
         }
 
-        return 0;
+        return 9;
+    }
+
+     private void Deactivate() //remove ghost
+    { 
+        gameObject.SetActive(false);
     }
 
 }

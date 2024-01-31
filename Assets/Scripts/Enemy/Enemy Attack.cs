@@ -14,6 +14,7 @@ public class EnemyAttack : MonoBehaviour
     }
     void Update()
        
+     //Limit attacks to a time interval.
     {
         cooldownTimer += Time.deltaTime;
 
@@ -25,6 +26,8 @@ public class EnemyAttack : MonoBehaviour
            
         }
     }
+
+    //access to pooled projectiles and firing them off
     private void Attacking()
     {
         rE.ectoplasm[rE.FindEctoplasm()].transform.position = rE.firepoint.position;
