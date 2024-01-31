@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] public Transform firePoint;
     [SerializeField] public GameObject[] holyWater;
-    private PlayerStats pS;
+    public PlayerStats pS;
 
     private void Awake() //setting ammo
     {

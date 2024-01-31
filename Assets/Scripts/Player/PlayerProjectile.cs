@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerProjectile : BaseProjectile
 {
     public PlayerMovement pM;
-    private PlayerStats pS;
+    public PlayerStats pS;
 
     public void Start()
     {

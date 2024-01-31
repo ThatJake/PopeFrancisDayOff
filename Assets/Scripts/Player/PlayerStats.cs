@@ -5,7 +5,7 @@ public class PlayerStats : MonoBehaviour
 {
     private int xp = 0;
     private int level = 1;
-    private PlayerMovement pM;
+    public PlayerMovement pM;
     public float newJumpSpeed = 7;
 
     public int XP => xp;
