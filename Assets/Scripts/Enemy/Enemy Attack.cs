@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    [SerializeField] private float attackCooldown;
+    
     private RangedEnemy rE;
     private float cooldownTimer = Mathf.Infinity;
 
@@ -12,6 +12,8 @@ public class EnemyAttack : MonoBehaviour
     {
         rE = GetComponent<RangedEnemy>();
     }
+
+
     void Update()
        
      //Limit attacks to a time interval.
@@ -19,7 +21,7 @@ public class EnemyAttack : MonoBehaviour
         cooldownTimer += Time.deltaTime;
 
 
-        if (cooldownTimer >= attackCooldown)
+        if (cooldownTimer >= 2)
         {
             cooldownTimer = 0;
             Attacking();

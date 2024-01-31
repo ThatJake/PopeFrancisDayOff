@@ -575,6 +575,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3398519065448089277, guid: 8743a6353d11c46449d7612ae730642e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398519065448089277, guid: 8743a6353d11c46449d7612ae730642e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 5245549986030944810, guid: 8743a6353d11c46449d7612ae730642e, type: 3}
       propertyPath: damageAmount
       value: 1
@@ -820,7 +828,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26503d84522c70147ac44c2868b865df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 60
 --- !u!1001 &291936681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3555,6 +3562,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3398519065448089277, guid: 8743a6353d11c46449d7612ae730642e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398519065448089277, guid: 8743a6353d11c46449d7612ae730642e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 5245549986030944810, guid: 8743a6353d11c46449d7612ae730642e, type: 3}
       propertyPath: damageAmount
       value: 1
@@ -5762,7 +5777,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26503d84522c70147ac44c2868b865df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 60
 --- !u!1 &1218315842 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7196431974070373599, guid: e932f79e2881e4c4bb502668fdc81fc7, type: 3}
@@ -6236,7 +6250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26503d84522c70147ac44c2868b865df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 60
 --- !u!1 &1570413641 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8883612295614014643, guid: d0f74307c3c21454c9e5e9aadbdd8bb7, type: 3}
@@ -38205,7 +38218,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3398519065448089277, guid: 8743a6353d11c46449d7612ae730642e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.8
+      value: -0.743
       objectReference: {fileID: 0}
     - target: {fileID: 3398519065448089277, guid: 8743a6353d11c46449d7612ae730642e, type: 3}
       propertyPath: m_LocalPosition.y
