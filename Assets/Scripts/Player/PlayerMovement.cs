@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] public Transform firePoint;
     [SerializeField] public GameObject[] holyWater;
+    private PlayerStats pS;
 
     private void Awake() //setting ammo
     {
@@ -29,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rbPope = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
+        pS = GetComponent<PlayerStats>();
     }
 
     private void Update()
@@ -88,6 +90,6 @@ public class PlayerMovement : MonoBehaviour
     }
     public void SetJumpSpeed(float newJumpSpeed) //resetting jump speed
     {
-        jumpSpeed = newJumpSpeed;
+        jumpSpeed = pS.newJumpSpeed;
     }
 }

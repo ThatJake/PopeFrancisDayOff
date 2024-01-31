@@ -11,7 +11,7 @@ public class EnemyProjectile : BaseProjectile
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<Health>().TakeDamageExternal(1);
-
+            base.Deactivate();
         }
         base.OnTriggerEnter2D(collision);
     }

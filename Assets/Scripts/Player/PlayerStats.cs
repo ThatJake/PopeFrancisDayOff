@@ -6,6 +6,7 @@ public class PlayerStats : MonoBehaviour
     private int xp = 0;
     private int level = 1;
     private PlayerMovement pM;
+    public float newJumpSpeed = 7;
 
     public int XP => xp;
     public int Level => level;
@@ -35,9 +36,9 @@ public class PlayerStats : MonoBehaviour
     {
         level++;
 
-        if (level == 2 && pM != null) 
+        if (level == 2) 
         {
-            pM.SetJumpSpeed(10f);
+           newJumpSpeed = 10f;
         }
     }
 }

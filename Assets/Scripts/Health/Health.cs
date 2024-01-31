@@ -9,9 +9,11 @@ public class Health : MonoBehaviour
     public float currentHealth {get; private set;}
     private Animator anim;
     private bool dead;
+    private PlayerMovement pM;
 
      private void Awake()
     {
+        pM = GetComponent<PlayerMovement>();
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
     }
@@ -27,8 +29,7 @@ public class Health : MonoBehaviour
         else //what happens if player/enemy is dead
         {
             Die();
-        }
-        
+        }       
     }
 
     //restoring health
@@ -53,8 +54,7 @@ public class Health : MonoBehaviour
 
             if (GetComponent<RangedEnemy>() != null) // when enemy dies
             {
-                GetComponent<RangedEnemy>().enabled = false;
-                
+                GetComponent<RangedEnemy>().enabled = false;                              
             }
         }
     }
